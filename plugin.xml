@@ -5,5 +5,6 @@
   See the accompanying LICENSE file for applicable licenses.
 -->
 <plugin id="com.dita-bootstrap.extension.specialization" version="5.3.1">
+  <require plugin="com.dita-bootstrap.specialization"/>
   <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
 </plugin>
