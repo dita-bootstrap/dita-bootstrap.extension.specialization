@@ -24,6 +24,18 @@
     publicId="-//Infotexture//ELEMENTS DITA Bootstrap Common Overrides//EN"
     uri="plugin:com.dita-bootstrap.specialization/dtd/base/commonElements.mod"
   />
+  <system
+    systemId="bootstrapDomain.ent"
+    uri="plugin:com.dita-bootstrap.specialization/dtd/base/bootstrapDomain.ent"
+  />
+  <system
+    systemId="bootstrapDomain.mod"
+    uri="plugin:com.dita-bootstrap.specialization/dtd/base/bootstrapDomain.mod"
+  />
+  <system
+    systemId="commonElements.mod"
+    uri="plugin:com.dita-bootstrap.specialization/dtd/base/commonElements.mod"
+  />
 
 
   <system
