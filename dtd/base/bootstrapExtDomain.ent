@@ -1,0 +1,44 @@
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA Bootstrap Extension Domain Entities           -->
+<!--  DATE:      March 2026                                        -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    ELEMENT NAME ENTITIES                      -->
+<!-- ============================================================= -->
+
+<!ENTITY % counter "counter">
+<!ENTITY % parallax "parallax">
+<!ENTITY % slider "slider">
+<!ENTITY % whitebox "whitebox">
+<!ENTITY % whitebox-item "whitebox-item">
+
+<!-- ============================================================= -->
+<!--                    ELEMENT EXTENSION ENTITY DECLARATIONS      -->
+<!-- ============================================================= -->
+
+<!ENTITY % bootstrap-ext-d-ph "counter">
+<!ENTITY % bootstrap-ext-d-section "parallax">
+<!ENTITY % bootstrap-ext-d-bodydiv "slider">
+<!ENTITY % bootstrap-ext-d-ul "whitebox">
+<!ENTITY % bootstrap-ext-d-li "whitebox-item">
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATION                  -->
+<!-- ============================================================= -->
+
+<!ENTITY bootstrap-ext-d-att "(topic bootstrap-ext-d)">
+
+<!-- ============================================================= -->
+<!--                    CAROUSEL OVERRIDE                         -->
+<!-- ============================================================= -->
+<!ATTLIST carousel indicators (yes | no | round) #IMPLIED>
+
+<!ENTITY % image-decoration-atts
+  "monochromatic (blue | brown | fresh | gold | gray | green | red | purple) #IMPLIED
+   grayscale (yes | no) #IMPLIED
+   zoom (sm | md | lg | yes | no) #IMPLIED
+   onhover (color | grayscale) #IMPLIED"
+>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+<!--
+  This file is part of the DITA Bootstrap Extension plug-in for DITA Open Toolkit.
+  See the accompanying LICENSE file for applicable licenses.
+-->
+<plugin id="com.dita-bootstrap.extension.specialization" version="5.3.1">
+  <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
+</plugin>
