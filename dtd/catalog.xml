@@ -12,8 +12,13 @@
     publicId="-//Infotexture//ELEMENTS DITA Bootstrap Extension Domain//EN"
     uri="base/bootstrapExtDomain.mod"
   />
+  <public
+    publicId="-//Infotexture//ELEMENTS DITA Bootstrap Common Overrides//EN"
+    uri="../../../dita-bootstrap.specialization/dtd/base/commonElements.mod"
+  />
   <system
     systemId="bootstrap-ext-topic.dtd"
     uri="base/bootstrap-ext-topic.dtd"
   />
+
 </catalog>
