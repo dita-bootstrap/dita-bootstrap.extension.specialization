@@ -34,11 +34,16 @@ jobs:
             export DEBIAN_FRONTEND=noninteractive
             apt-get install -qy --no-install-recommends nodejs
             nodejs -v
+            mkdir -p dtd/base
+            curl -L https://raw.githubusercontent.com/dita-bootstrap/dita-bootstrap.specialization/master/dtd/base/bootstrapDomain.ent -o dtd/base/bootstrapDomain.ent
+            curl -L https://raw.githubusercontent.com/dita-bootstrap/dita-bootstrap.specialization/master/dtd/base/bootstrapDomain.mod -o dtd/base/bootstrapDomain.mod
+            curl -L https://raw.githubusercontent.com/dita-bootstrap/dita-bootstrap.specialization/master/dtd/base/commonElements.mod -o dtd/base/commonElements.mod
           plugins: |
             fox.jason.extend.css
             https://github.com/dita-bootstrap/dita-bootstrap.specialization/archive/develop.zip
             https://github.com/infotexture/dita-bootstrap/archive/develop.zip
             https://github.com/dita-bootstrap/dita-bootstrap.extension.specialization/archive/develop.zip
+
             https://github.com/infotexture/dita-bootstrap.extension/archive/develop.zip
             net.infotexture.dita-bootstrap.lunr
             https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
@@ -46,6 +51,7 @@ jobs:
             fox.jason.open-graph
             https://github.com/dita-bootstrap/dita-bootstrap.theme-switcher/archive/master.zip
           project: .github/dita-ot/html.xml
+
 
       - name: Deploy HTML 🚀
         uses: JamesIves/github-pages-deploy-action@v4.8.0
