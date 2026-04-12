@@ -52,7 +52,6 @@ jobs:
             https://github.com/dita-bootstrap/dita-bootstrap.theme-switcher/archive/master.zip
           project: .github/dita-ot/html.xml
 
-
       - name: Deploy HTML 🚀
         uses: JamesIves/github-pages-deploy-action@v4.8.0
         with:
