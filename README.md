@@ -1,3 +1,36 @@
 # DITA Bootstrap Extension Specialization
 
-DITA specializations for the DITA Bootstrap Extension plug-in.
+DITA Bootstrap Extension Specialization is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that provides the DTD specializations for the [DITA Bootstrap Extension plug-in](https://github.com/infotexture/dita-bootstrap.extension).
+
+## Featured Bootstrap Extension components
+
+The plug-in includes DTD handling for the following Bootstrap Extension components:
+
+- [Counter](https://bootstrapextensions.com/counter.html) (`<counter>`)
+- [Parallax](https://bootstrapextensions.com/parallax.html) (`<parallax>`)
+- [Slider](https://bootstrapextensions.com/slider.html) (`<slider>`)
+- [Whitebox](https://bootstrapextensions.com/whitebox.html) (`<whitebox>`)
+
+## Using Bootstrap Extension Specializations
+
+The extension specializations provide native DITA elements for Bootstrap Extension features:
+
+```xml
+<parallax href="background.jpg" speed="0.5">
+  <title>Parallax Title</title>
+  <p>Content goes here.</p>
+</parallax>
+```
+
+### Attributes
+
+The extension specializations support common Bootstrap decoration attributes:
+
+- **Color Themes**: `color` and `bordercolor`.
+- **Borders**: `border` and `rounded`.
+- **Spacing**: `margin` and `padding`.
+- **Layout**: `width` and `shadow`.
+
+## License
+
+[Apache 2.0](LICENSE) © 2024-2026 Jason Fox
