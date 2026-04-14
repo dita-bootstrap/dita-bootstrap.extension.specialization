@@ -4,7 +4,7 @@
   This file is part of the DITA Bootstrap Extension plug-in for DITA Open Toolkit.
   See the accompanying LICENSE file for applicable licenses.
 -->
-<plugin id="com.dita-bootstrap.extension.specialization" version="5.3.1">
-  <require plugin="com.dita-bootstrap.specialization"/>
+<plugin id="org.dita-bootstrap.extension.specialization" version="5.3.1">
+  <require plugin="org.dita-bootstrap.specialization"/>
   <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
 </plugin>
