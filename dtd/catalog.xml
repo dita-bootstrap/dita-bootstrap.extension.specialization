@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
   <public
-    publicId="-//Infotexture//DTD DITA Bootstrap Extension Topic//EN"
+    publicId="-//DITA Bootstrap//DTD DITA Bootstrap Extension Topic//EN"
     uri="base/bootstrap-ext-topic.dtd"
   />
   <public
-    publicId="-//Infotexture//ENTITIES DITA Bootstrap Extension Domain//EN"
+    publicId="-//DITA Bootstrap//ENTITIES DITA Bootstrap Extension Domain//EN"
     uri="base/bootstrapExtDomain.ent"
   />
   <public
-    publicId="-//Infotexture//ELEMENTS DITA Bootstrap Extension Domain//EN"
+    publicId="-//DITA Bootstrap//ELEMENTS DITA Bootstrap Extension Domain//EN"
     uri="base/bootstrapExtDomain.mod"
   />
 
@@ -21,15 +21,15 @@
   <!-- Core Mappings using plugin: URIs -->
 
   <public
-    publicId="-//Infotexture//ENTITIES DITA Bootstrap Domain//EN"
+    publicId="-//DITA Bootstrap//ENTITIES DITA Bootstrap Domain//EN"
     uri="plugin:org.dita-bootstrap.specialization/dtd/base/bootstrapDomain.ent"
   />
   <public
-    publicId="-//Infotexture//ELEMENTS DITA Bootstrap Domain//EN"
+    publicId="-//DITA Bootstrap//ELEMENTS DITA Bootstrap Domain//EN"
     uri="plugin:org.dita-bootstrap.specialization/dtd/base/bootstrapDomain.mod"
   />
   <public
-    publicId="-//Infotexture//ELEMENTS DITA Bootstrap Common Overrides//EN"
+    publicId="-//DITA Bootstrap//ELEMENTS DITA Bootstrap Common Overrides//EN"
     uri="plugin:org.dita-bootstrap.specialization/dtd/base/commonElements.mod"
   />
 
