@@ -44,7 +44,7 @@
     <ul>
       <li><codeph>0-8</codeph> - for classes that set the margin or padding to various rem sizes.</li>
     </ul>
-    <section>
+    <section id="negative-margin">
       <title>Negative margin</title>
       <p>In CSS, margin properties can utilize negative values (padding cannot). These negative margins
         can be applied using the <xmlatt>margin</xmlatt> attribute with a dash separator
@@ -70,24 +70,6 @@
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;div padding="y6" color="primary"&gt;
-  Any div with .py-6
-&lt;/div&gt;
-&lt;div padding="y7" color="info"&gt;
-  Any div with .py-7
-&lt;/div&gt;
-&lt;div padding="y8" color="warning"&gt;
-  Any div with .py-8
-&lt;/div&gt;
-&lt;div width="40" padding="6" outputclass="bg-velvet text-white"&gt;
-  Any div
-&lt;/div&gt;
-&lt;div width="40" padding="6" margin="s6 t-6" outputclass="bg-rose text-white"&gt;
-  Any div
-&lt;/div&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;div outputclass="py-6 bg-primary text-white"&gt;
   Any div with .py-6
@@ -102,6 +84,24 @@
   Any div
 &lt;/div&gt;
 &lt;div outputclass="w-40 p-6 ms-6 mt-n6 bg-rose text-white"&gt;
+  Any div
+&lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;div padding="y6" color="primary"&gt;
+  Any div with .py-6
+&lt;/div&gt;
+&lt;div padding="y7" color="info"&gt;
+  Any div with .py-7
+&lt;/div&gt;
+&lt;div padding="y8" color="warning"&gt;
+  Any div with .py-8
+&lt;/div&gt;
+&lt;div width="40" padding="6" outputclass="bg-velvet text-white"&gt;
+  Any div
+&lt;/div&gt;
+&lt;div width="40" padding="6" margin="s6 t-6" outputclass="bg-rose text-white"&gt;
   Any div
 &lt;/div&gt;</codeblock>
       </section>

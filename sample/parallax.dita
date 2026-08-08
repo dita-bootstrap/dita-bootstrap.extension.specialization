@@ -20,7 +20,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="parallax-intro">
       <title>Parallax</title>
     </section>
 
@@ -111,31 +111,6 @@
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;section&gt;
-  &lt;title &gt;Title 1&lt;/title&gt;
-  ...
-&lt;/section&gt;
-&lt;parallax padding="y6 x4" outputclass="text-white" 
-  href="..." speed="0.3"&gt;
-  &lt;title outputclass="text-center display-4"&gt;Section Title&lt;/title&gt;
-  ...
-&lt;/parallax&gt;
-&lt;section&gt;
-  &lt;title&gt;Title 2&lt;/title&gt;
-  ...
-&lt;/section&gt;
-&lt;parallax padding="y6 x4" outputclass="text-white" 
-  href="..." speed="0.3"&gt;
-    &lt;title outputclass="text-center display-4"&gt;Section Title&lt;/title&gt;
-    ...
-&lt;/parallax&gt;
-&lt;section&gt;
-    &lt;title&gt;Title 3&lt;/title&gt;
-    ...
-&lt;/section&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;section&gt;
   &lt;title &gt;Title 1&lt;/title&gt;
@@ -155,6 +130,31 @@
     &lt;title outputclass="text-center display-4"&gt;Section Title&lt;/title&gt;
     ...
 &lt;/section&gt;
+&lt;section&gt;
+    &lt;title&gt;Title 3&lt;/title&gt;
+    ...
+&lt;/section&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;section&gt;
+  &lt;title &gt;Title 1&lt;/title&gt;
+  ...
+&lt;/section&gt;
+&lt;parallax padding="y6 x4" outputclass="text-white" 
+  href="..." speed="0.3"&gt;
+  &lt;title outputclass="text-center display-4"&gt;Section Title&lt;/title&gt;
+  ...
+&lt;/parallax&gt;
+&lt;section&gt;
+  &lt;title&gt;Title 2&lt;/title&gt;
+  ...
+&lt;/section&gt;
+&lt;parallax padding="y6 x4" outputclass="text-white" 
+  href="..." speed="0.3"&gt;
+    &lt;title outputclass="text-center display-4"&gt;Section Title&lt;/title&gt;
+    ...
+&lt;/parallax&gt;
 &lt;section&gt;
     &lt;title&gt;Title 3&lt;/title&gt;
     ...

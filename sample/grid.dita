@@ -27,32 +27,32 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section outputclass="row pb-5">
+    <section id="gutter" outputclass="row pb-5">
       <title>Gutter</title>
       <p>Use the <codeph>.g-{breakpoint}-6</codeph> outputclass for larger spaces (6rem).</p>
     </section>
     <bodydiv outputclass="bd-example container" deliveryTarget="html">
       <grid-row outputclass="g-lg-6">
         <grid-col breakpoint="md" colspan="3">
-          <section>
+          <section id="article-1">
             <title>Article 1</title>
             <image width="100" scope="external" href="https://picsum.photos/1200/600?j"/>
           </section>
         </grid-col>
         <grid-col breakpoint="md" colspan="3">
-          <section>
+          <section id="article-2">
             <title>Article 2</title>
             <image width="100" scope="external" href="https://picsum.photos/1200/600?j"/>
           </section>
         </grid-col>
         <grid-col breakpoint="md" colspan="3">
-          <section>
+          <section id="article-3">
             <title>Article 3</title>
             <image width="100" scope="external" href="https://picsum.photos/1200/600?j"/>
           </section>
         </grid-col>
         <grid-col breakpoint="md" colspan="3">
-          <section>
+          <section id="article-4">
             <title>Article 4</title>
             <image width="100" scope="external" href="https://picsum.photos/1200/600?j"/>
           </section>
@@ -61,31 +61,6 @@
     </bodydiv>
 
     <tabbed-dialog style="pills" margin="t3">
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;grid-row outputclass="g-lg-6"&gt;
-  &lt;grid-col breakpoint="md" colspan="3"&gt;
-    &lt;section&gt;
-      ...
-    &lt;/section&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col breakpoint="md" colspan="3"&gt;
-    &lt;section&gt;
-      ...
-    &lt;/section&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col breakpoint="md" colspan="3"&gt;
-    &lt;section&gt;
-      ...
-    &lt;/section&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col breakpoint="md" colspan="3"&gt;
-    &lt;section&gt;
-      ...
-    &lt;/section&gt;
-  &lt;/grid-col&gt;
-&lt;/grid-row&gt;</codeblock>
-      </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="row g-lg-6"&gt;
@@ -111,9 +86,34 @@
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
       </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;grid-row outputclass="g-lg-6"&gt;
+  &lt;grid-col breakpoint="md" colspan="3"&gt;
+    &lt;section&gt;
+      ...
+    &lt;/section&gt;
+  &lt;/grid-col&gt;
+  &lt;grid-col breakpoint="md" colspan="3"&gt;
+    &lt;section&gt;
+      ...
+    &lt;/section&gt;
+  &lt;/grid-col&gt;
+  &lt;grid-col breakpoint="md" colspan="3"&gt;
+    &lt;section&gt;
+      ...
+    &lt;/section&gt;
+  &lt;/grid-col&gt;
+  &lt;grid-col breakpoint="md" colspan="3"&gt;
+    &lt;section&gt;
+      ...
+    &lt;/section&gt;
+  &lt;/grid-col&gt;
+&lt;/grid-row&gt;</codeblock>
+      </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="column-push-and-pull">
       <title>Column push and pull</title>
       <p>Use <codeph>col-{breakpoint}-push-*</codeph> or <codeph>col-{breakpoint}-pull-*</codeph> outputclasses to push
         or pull the elements in grid system. The <codeph>col-{breakpoint}-push-*</codeph> outputclasses also shift the
@@ -137,17 +137,6 @@
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;grid-row&gt;
-  &lt;grid-col breakpoint="md" colspan="6" outputclass="col-md-push-1"&gt;
-    &lt;image width="100" href="..."/&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col breakpoint="md" colspan="6" outputclass="col-md-pull-2" margin="t5"&gt;
-    &lt;p outputclass="bg-fresh text-light" padding="3"&gt;...&lt;/p&gt;
-  &lt;/grid-col&gt;
-&lt;/grid-row&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="row"&gt;
   &lt;bodydiv outputclass="col-md-6 col-md-push-1"&gt;
@@ -158,9 +147,20 @@
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
       </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;grid-row&gt;
+  &lt;grid-col breakpoint="md" colspan="6" outputclass="col-md-push-1"&gt;
+    &lt;image width="100" href="..."/&gt;
+  &lt;/grid-col&gt;
+  &lt;grid-col breakpoint="md" colspan="6" outputclass="col-md-pull-2" margin="t5"&gt;
+    &lt;p outputclass="bg-fresh text-light" padding="3"&gt;...&lt;/p&gt;
+  &lt;/grid-col&gt;
+&lt;/grid-row&gt;</codeblock>
+      </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="column-ordering">
       <title>Column ordering</title>
       <p>Easily change the order of built-in grid columns with <xmlatt>outputclass="col-{breakpoint}-push-*"</xmlatt>
         and <xmlatt>outputclass="col-{breakpoint}-pull-*"</xmlatt> modifier outputclasses.</p>
@@ -174,17 +174,6 @@
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;grid-row&gt;
-  &lt;grid-col colspan="6" outputclass="col-md-push-6" color="primary" padding="y3"&gt;
-    First
-  &lt;/grid-col&gt;
-  &lt;grid-col colspan="6" outputclass="col-md-pull-12" color="secondary" padding="y3"&gt;
-    Second
-  &lt;/grid-col&gt;
-&lt;/grid-row&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="row"&gt;
   &lt;bodydiv outputclass="col-6 col-md-push-6 bg-primary text-light py-3"&gt;
@@ -195,9 +184,20 @@
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
       </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;grid-row&gt;
+  &lt;grid-col colspan="6" outputclass="col-md-push-6" color="primary" padding="y3"&gt;
+    First
+  &lt;/grid-col&gt;
+  &lt;grid-col colspan="6" outputclass="col-md-pull-12" color="secondary" padding="y3"&gt;
+    Second
+  &lt;/grid-col&gt;
+&lt;/grid-row&gt;</codeblock>
+      </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="content-rotate">
       <title>Content rotate</title>
       <p>You can rotate the contents 0 to 90 degrees left or right. Use the .rotate-{breakpoint}-l-{degree} outputclass
         to rotate left or the .rotate-{breakpoint}-r-{degree} outputclass to rotate right.</p>
@@ -228,6 +228,27 @@
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;bodydiv outputclass="container o-hidden"&gt;
+  &lt;bodydiv outputclass="row"&gt;
+    &lt;bodydiv outputclass="col-12 col-sm-6 col-sm-push-4 rotate-sm-l-90"&gt;
+      &lt;p outputclass="display-7"&gt;New York&lt;/p&gt;
+    &lt;/bodydiv&gt;
+    &lt;bodydiv outputclass="col-12 col-sm-6 col-sm-pull-4"&gt;
+      &lt;image outputclass="w-100 mt-5" href="..."/&gt;
+    &lt;/bodydiv&gt;
+  &lt;/bodydiv&gt;
+  &lt;bodydiv outputclass="row"&gt;
+    &lt;bodydiv outputclass="col-12 col-sm-6 col-sm-push-2 rotate-sm-r-90"&gt;
+      &lt;p outputclass="display-7"&gt;San Francisco&lt;/p&gt;
+    &lt;/bodydiv&gt;
+    &lt;bodydiv outputclass="col-12 col-sm-6 col-sm-pull-8"&gt;
+      &lt;image outputclass="w-100 mt-5" href="..."/&gt;
+    &lt;/bodydiv&gt;
+  &lt;/bodydiv&gt;
+&lt;/bodydiv&gt;</codeblock>
+      </section>
+      <section>
         <title>Specialization</title>
         <codeblock>&lt;bodydiv outputclass="container o-hidden"&gt;
   &lt;grid-row&gt;
@@ -248,27 +269,6 @@
       &lt;p outputclass="display-9 text-secondary" margin="b5"&gt;...&lt;/p&gt;
     &lt;/grid-col&gt;
   &lt;/grid-row&gt;
-&lt;/bodydiv&gt;</codeblock>
-      </section>
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;bodydiv outputclass="container o-hidden"&gt;
-  &lt;bodydiv outputclass="row"&gt;
-    &lt;bodydiv outputclass="col-12 col-sm-6 col-sm-push-4 rotate-sm-l-90"&gt;
-      &lt;p outputclass="display-7"&gt;New York&lt;/p&gt;
-    &lt;/bodydiv&gt;
-    &lt;bodydiv outputclass="col-12 col-sm-6 col-sm-pull-4"&gt;
-      &lt;image outputclass="w-100 mt-5" href="..."/&gt;
-    &lt;/bodydiv&gt;
-  &lt;/bodydiv&gt;
-  &lt;bodydiv outputclass="row"&gt;
-    &lt;bodydiv outputclass="col-12 col-sm-6 col-sm-push-2 rotate-sm-r-90"&gt;
-      &lt;p outputclass="display-7"&gt;San Francisco&lt;/p&gt;
-    &lt;/bodydiv&gt;
-    &lt;bodydiv outputclass="col-12 col-sm-6 col-sm-pull-8"&gt;
-      &lt;image outputclass="w-100 mt-5" href="..."/&gt;
-    &lt;/bodydiv&gt;
-  &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
       </section>
     </tabbed-dialog>

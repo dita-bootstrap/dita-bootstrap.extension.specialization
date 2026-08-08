@@ -48,21 +48,6 @@
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;p width="5" padding="3" outputclass="bg-cream text-dark"&gt;Width 5%&lt;/p&gt;
-&lt;p width="10" padding="3" outputclass="bg-cream text-dark"&gt;Width 10%&lt;/p&gt;
-&lt;p width="15" padding="3" outputclass="bg-cream text-dark"&gt;Width 15%&lt;/p&gt;
-&lt;p width="20" padding="3" outputclass="bg-cream text-dark"&gt;Width 20%&lt;/p&gt;
-&lt;p width="25" padding="3" outputclass="bg-cream text-dark"&gt;Width 25%&lt;/p&gt;
-&lt;p width="30" padding="3" outputclass="bg-cream text-dark"&gt;Width 30%&lt;/p&gt;
-&lt;p width="35" padding="3" outputclass="bg-cream text-dark"&gt;Width 35%&lt;/p&gt;
-&lt;p width="40" padding="3" outputclass="bg-cream text-dark"&gt;Width 40%&lt;/p&gt;
-&lt;p width="45" padding="3" outputclass="bg-cream text-dark"&gt;Width 45%&lt;/p&gt;
-&lt;p width="50" padding="3" outputclass="bg-cream text-dark"&gt;Width 50%&lt;/p&gt;
-...
-&lt;p width="95" padding="3" outputclass="bg-cream text-dark"&gt;Width 95%&lt;/p&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;p outputclass="w-5 p-3 bg-cream text-dark"&gt;Width 5%&lt;/p&gt;
 &lt;p outputclass="w-10 p-3 bg-cream text-dark"&gt;Width 10%&lt;/p&gt;
@@ -76,6 +61,21 @@
 &lt;p outputclass="w-50 p-3 bg-cream text-dark"&gt;Width 50%&lt;/p&gt;
 ...
 &lt;p outputclass="w-95 p-3 bg-cream text-dark"&gt;Width 95%&lt;/p&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;p width="5" padding="3" outputclass="bg-cream text-dark"&gt;Width 5%&lt;/p&gt;
+&lt;p width="10" padding="3" outputclass="bg-cream text-dark"&gt;Width 10%&lt;/p&gt;
+&lt;p width="15" padding="3" outputclass="bg-cream text-dark"&gt;Width 15%&lt;/p&gt;
+&lt;p width="20" padding="3" outputclass="bg-cream text-dark"&gt;Width 20%&lt;/p&gt;
+&lt;p width="25" padding="3" outputclass="bg-cream text-dark"&gt;Width 25%&lt;/p&gt;
+&lt;p width="30" padding="3" outputclass="bg-cream text-dark"&gt;Width 30%&lt;/p&gt;
+&lt;p width="35" padding="3" outputclass="bg-cream text-dark"&gt;Width 35%&lt;/p&gt;
+&lt;p width="40" padding="3" outputclass="bg-cream text-dark"&gt;Width 40%&lt;/p&gt;
+&lt;p width="45" padding="3" outputclass="bg-cream text-dark"&gt;Width 45%&lt;/p&gt;
+&lt;p width="50" padding="3" outputclass="bg-cream text-dark"&gt;Width 50%&lt;/p&gt;
+...
+&lt;p width="95" padding="3" outputclass="bg-cream text-dark"&gt;Width 95%&lt;/p&gt;</codeblock>
       </section>
     </tabbed-dialog>
   </body>

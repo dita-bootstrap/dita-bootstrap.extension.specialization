@@ -33,20 +33,6 @@
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;whitebox&gt;
-  &lt;whitebox-item&gt;
-    &lt;image href="..."/&gt;
-  &lt;/whitebox-item&gt;
-  &lt;whitebox-item&gt;
-    &lt;image href="..."/&gt;
-  &lt;/whitebox-item&gt;
-  &lt;whitebox-item&gt;
-    &lt;image href="..."/&gt;
-  &lt;/whitebox-item&gt;
-&lt;/whitebox&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ol outputclass="whitebox"&gt;
   &lt;li&gt;
@@ -60,8 +46,22 @@
   &lt;/li&gt;
 &lt;/ol&gt;</codeblock>
       </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;whitebox&gt;
+  &lt;whitebox-item&gt;
+    &lt;image href="..."/&gt;
+  &lt;/whitebox-item&gt;
+  &lt;whitebox-item&gt;
+    &lt;image href="..."/&gt;
+  &lt;/whitebox-item&gt;
+  &lt;whitebox-item&gt;
+    &lt;image href="..."/&gt;
+  &lt;/whitebox-item&gt;
+&lt;/whitebox&gt;</codeblock>
+      </section>
     </tabbed-dialog>
-    <section>
+    <section id="whitebox-gallery-titles">
       <title>Whitebox Gallery Titles</title>
       <p>Use the <xmlelement>alt</xmlelement> element to display a title with each image.</p>
     </section>
@@ -87,26 +87,6 @@
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;whitebox&gt;
-  &lt;whitebox-item&gt;
-    &lt;image href="..."&gt;
-      &lt;alt&gt;First Image&lt;/alt&gt;
-    &lt;/image&gt;
-  &lt;/whitebox-item&gt;
-  &lt;whitebox-item&gt;
-    &lt;image href="..."&gt;
-      &lt;alt&gt;Second Image&lt;/alt&gt;
-    &lt;/image&gt;
-  &lt;/whitebox-item&gt;
-  &lt;whitebox-item&gt;
-    &lt;image href="..."&gt;
-      &lt;alt&gt;Third Image&lt;/alt&gt;
-    &lt;/image&gt;
-  &lt;/whitebox-item&gt;
-&lt;/whitebox&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ol outputclass="whitebox"&gt;
   &lt;li&gt;
@@ -125,6 +105,26 @@
     &lt;/image&gt;
   &lt;/li&gt;
 &lt;/ol&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;whitebox&gt;
+  &lt;whitebox-item&gt;
+    &lt;image href="..."&gt;
+      &lt;alt&gt;First Image&lt;/alt&gt;
+    &lt;/image&gt;
+  &lt;/whitebox-item&gt;
+  &lt;whitebox-item&gt;
+    &lt;image href="..."&gt;
+      &lt;alt&gt;Second Image&lt;/alt&gt;
+    &lt;/image&gt;
+  &lt;/whitebox-item&gt;
+  &lt;whitebox-item&gt;
+    &lt;image href="..."&gt;
+      &lt;alt&gt;Third Image&lt;/alt&gt;
+    &lt;/image&gt;
+  &lt;/whitebox-item&gt;
+&lt;/whitebox&gt;</codeblock>
       </section>
     </tabbed-dialog>
   </body>

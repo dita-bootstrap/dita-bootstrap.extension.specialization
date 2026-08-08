@@ -38,20 +38,6 @@
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;slider&gt;
-  &lt;card&gt;
-    ...
-  &lt;/card&gt;
-  &lt;card&gt;
-    ...
-  &lt;/card&gt;
-  &lt;card&gt;
-    ...
-  &lt;/card&gt;
-&lt;/slider&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="slider"&gt;
   &lt;section outputclass="card"&gt;
@@ -64,6 +50,20 @@
     ...
   &lt;/section&gt;
 &lt;/bodydiv&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;slider&gt;
+  &lt;card&gt;
+    ...
+  &lt;/card&gt;
+  &lt;card&gt;
+    ...
+  &lt;/card&gt;
+  &lt;card&gt;
+    ...
+  &lt;/card&gt;
+&lt;/slider&gt;</codeblock>
       </section>
     </tabbed-dialog>
   </body>

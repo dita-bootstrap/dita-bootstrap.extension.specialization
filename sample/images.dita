@@ -28,7 +28,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="grayscale-images">
       <title>Grayscale images</title>
       <p>Use the <xmlatt>grayscale</xmlatt> and <xmlatt
         >onhover</xmlatt> attributes to grayscale images and apply hover effects.</p>
@@ -52,12 +52,6 @@
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;image grayscale="yes" href="..."/&gt;
-&lt;image onhover="color" href="..."/&gt;
-&lt;image onhover="grayscale" href="..."/&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;div outputclass="grayscale"&gt;
   &lt;image href="..."/&gt;
@@ -69,9 +63,15 @@
   &lt;image href="..."/&gt;
 &lt;/div&gt;</codeblock>
       </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;image grayscale="yes" href="..."/&gt;
+&lt;image onhover="color" href="..."/&gt;
+&lt;image onhover="grayscale" href="..."/&gt;</codeblock>
+      </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="hover-zoom">
       <title>Hover zoom</title>
       <p>Use the <xmlatt>zoom</xmlatt> attribute with values <codeph>sm</codeph>, <codeph>md</codeph> (or <codeph
         >yes</codeph>), and
@@ -96,12 +96,6 @@
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;image zoom="sm" href="..."/&gt;
-&lt;image zoom="md" href="..."/&gt;
-&lt;image zoom="lg" href="..."/&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;div outputclass="hover-zoom-sm"&gt;
   &lt;image href="..."/&gt;
@@ -113,9 +107,15 @@
   &lt;image href="..."/&gt;
 &lt;/div&gt;</codeblock>
       </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;image zoom="sm" href="..."/&gt;
+&lt;image zoom="md" href="..."/&gt;
+&lt;image zoom="lg" href="..."/&gt;</codeblock>
+      </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="fade-in-overlay">
       <title>Fade in overlay</title>
       <p>Hover over the image to see the effect. Just use the <codeph>hover-fade-in-overlay</codeph> outputclass and the
           <codeph>overlay-{visibility}</codeph> outputclasses for this effect. Use the <codeph>from-t</codeph> and
@@ -175,7 +175,7 @@
       &lt;p&gt;&lt;xref color="warning" outputclass="btn" href="#"&gt;Button&lt;/xref&gt;&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</codeblock>
-    <section>
+    <section id="monochromatic-images">
       <title>Monochromatic images</title>
       <p>Use <xmlatt>monochromatic="{color}"</xmlatt> if you want a monochromatic image.</p>
     </section>
@@ -210,17 +210,6 @@
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;image monochromatic="blue" href="..."/&gt;
-&lt;image monochromatic="brown" href="..."/&gt;
-&lt;image monochromatic="fresh" href="..."/&gt;
-&lt;image monochromatic="gold" href="..."/&gt;
-&lt;image monochromatic="gray" href="..."/&gt;
-&lt;image monochromatic="green" href="..."/&gt;
-&lt;image monochromatic="red" href="..."/&gt;
-&lt;image monochromatic="purple" href="..."/&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;div outputclass="monochromatic-blue"&gt;
   &lt;image href="..."/&gt;
@@ -247,9 +236,20 @@
   &lt;image href="..."/&gt;
 &lt;/div&gt;</codeblock>
       </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;image monochromatic="blue" href="..."/&gt;
+&lt;image monochromatic="brown" href="..."/&gt;
+&lt;image monochromatic="fresh" href="..."/&gt;
+&lt;image monochromatic="gold" href="..."/&gt;
+&lt;image monochromatic="gray" href="..."/&gt;
+&lt;image monochromatic="green" href="..."/&gt;
+&lt;image monochromatic="red" href="..."/&gt;
+&lt;image monochromatic="purple" href="..."/&gt;</codeblock>
+      </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="thumbnails">
       <title>Thumbnails</title>
       <p>The <xmlelement>thumbnail</xmlelement> also supports the new semantic decoration attributes.</p>
     </section>
@@ -272,12 +272,6 @@
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;thumbnail monochromatic="blue" href="..."/&gt;
-&lt;thumbnail zoom="lg" href="..."/&gt;
-&lt;thumbnail onhover="grayscale" href="..."/&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;div outputclass="monochromatic-blue"&gt;
   &lt;image outputclass="img-thumbnail" href="..."/&gt;
@@ -288,6 +282,12 @@
 &lt;div outputclass="hover-grayscale"&gt;
   &lt;image outputclass="img-thumbnail" href="..."/&gt;
 &lt;/div&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;thumbnail monochromatic="blue" href="..."/&gt;
+&lt;thumbnail zoom="lg" href="..."/&gt;
+&lt;thumbnail onhover="grayscale" href="..."/&gt;</codeblock>
       </section>
     </tabbed-dialog>
   </body>

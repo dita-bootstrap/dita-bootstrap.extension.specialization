@@ -30,7 +30,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="indicators">
       <title>Indicators</title>
       <p>Set <xmlatt>indicators="round"</xmlatt> to add rounded indicators to the carousel, alongside the
         previous/next controls. The indicators let users jump directly to a particular slide.</p>
@@ -50,20 +50,6 @@
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;carousel indicators="round"&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ol outputclass="carousel" otherprops="indicators(round)"&gt;
   &lt;li&gt;
@@ -77,9 +63,23 @@
   &lt;/li&gt;
 &lt;/ol&gt;</codeblock>
       </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;carousel indicators="round"&gt;
+  &lt;carousel-item&gt;
+    &lt;image href="..." /&gt;
+  &lt;/carousel-item&gt;
+  &lt;carousel-item&gt;
+    &lt;image href="..." /&gt;
+  &lt;/carousel-item&gt;
+  &lt;carousel-item&gt;
+    &lt;image href="..." /&gt;
+  &lt;/carousel-item&gt;
+&lt;/carousel&gt;</codeblock>
+      </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="with-captions">
       <title>With captions</title>
       <p>Add captions by using <xmlelement>fig</xmlelement> elements</p>
     </section>
@@ -107,29 +107,6 @@
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;carousel indicators="round"&gt;
-  &lt;carousel-item&gt;
-    &lt;fig&gt;
-      &lt;title outputclass="carousel-caption-readable"&gt;The First Slide&lt;/title&gt;
-      &lt;image href="..." /&gt;
-    &lt;/fig&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;fig&gt;
-      &lt;title outputclass="carousel-caption-readable"&gt;The Second Slide&lt;/title&gt;
-      &lt;image href="..." /&gt;
-    &lt;/fig&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;fig&gt;
-      &lt;title outputclass="carousel-caption-readable"&gt;The Third Slide&lt;/title&gt;
-      &lt;image href="..." /&gt;
-    &lt;/fig&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ol outputclass="carousel" otherprops="indicators(round)"&gt;
   &lt;li&gt;
@@ -151,6 +128,29 @@
     &lt;/fig&gt;
   &lt;/li&gt;
 &lt;/ol&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;carousel indicators="round"&gt;
+  &lt;carousel-item&gt;
+    &lt;fig&gt;
+      &lt;title outputclass="carousel-caption-readable"&gt;The First Slide&lt;/title&gt;
+      &lt;image href="..." /&gt;
+    &lt;/fig&gt;
+  &lt;/carousel-item&gt;
+  &lt;carousel-item&gt;
+    &lt;fig&gt;
+      &lt;title outputclass="carousel-caption-readable"&gt;The Second Slide&lt;/title&gt;
+      &lt;image href="..." /&gt;
+    &lt;/fig&gt;
+  &lt;/carousel-item&gt;
+  &lt;carousel-item&gt;
+    &lt;fig&gt;
+      &lt;title outputclass="carousel-caption-readable"&gt;The Third Slide&lt;/title&gt;
+      &lt;image href="..." /&gt;
+    &lt;/fig&gt;
+  &lt;/carousel-item&gt;
+&lt;/carousel&gt;</codeblock>
       </section>
     </tabbed-dialog>
   </body>

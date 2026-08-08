@@ -43,12 +43,6 @@
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
-        <title>Specialization</title>
-        <codeblock>&lt;counter outputclass="display-1" target="5" /&gt;
-&lt;counter outputclass="display-1" target="150" /&gt;
-&lt;counter outputclass="display-1" target="127000" /&gt;</codeblock>
-      </section>
-      <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="display-1 counter" otherprops="data-target(5)"&gt;
 &lt;/ph&gt;
@@ -56,6 +50,12 @@
 &lt;/ph&gt;
 &lt;ph outputclass="display-1 counter" otherprops="data-target(127000)"&gt;
 &lt;/ph&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;counter outputclass="display-1" target="5" /&gt;
+&lt;counter outputclass="display-1" target="150" /&gt;
+&lt;counter outputclass="display-1" target="127000" /&gt;</codeblock>
       </section>
     </tabbed-dialog>
   </body>
